@@ -131,16 +131,11 @@ $ e^(-(x-52)^2/2)/sqrt(2 pi) $
 
 #cetz.canvas({
   plot.plot(
-    size: (13, 5),  // 图表尺寸
-    // 绘制标准正态分布（蓝色实线）
-    plot.add(
-      domain: (0,100), 
-      x => gaussian(x, 52, 10),
-    ),
-    // 添加网格和标签
-    grid: (x-step: 1, y-step: 0.1),
-    x-label: "Hz",
-    y-label: "P",
+    size: (13, 5),
+    plot.add(domain: (0, 100), x => gaussian(x, 52, 10)),
+    grid: (x-step: 10, y-step: 0.02), // 根据数据范围调整步长
+    x-label: "频率 (Hz)",
+    y-label: "概率密度",
     title: "特异性发射频率分布"
   )
 })
