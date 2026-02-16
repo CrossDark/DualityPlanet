@@ -3,8 +3,11 @@
 #import "@preview/cetz-plot:0.1.2": plot, chart // 导入简化绘图包
 #import "@preview/chemformula:0.1.2": ch // 导入化学包
 #import "@preview/alchemist:0.1.8": * // 导入键线式包
+#import "@preview/zh-format:0.1.0": * // 导入中文格式包
 
 #set text(lang: "ch")
+
+#show: zh-format
 
 #show: book.with(
   title: [阴阳星球],
